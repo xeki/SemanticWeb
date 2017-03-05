@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:cottage="http://localhost:8080/sswapService/res/cottage/"
+  xmlns:sswap="http://sswapmeet.sswap.info/sswap/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <cottage:cottageInformationService rdf:about="http://localhost:8080/sswapService/res/cottageRDG/cottageBookingService">
+    <sswap:operatesOn>
+      <sswap:Graph rdf:nodeID="ub40bL12C20">
+        <sswap:hasMapping>
+          <cottage:Request rdf:nodeID="ub40bL13C20">
+            <cottage:booker></cottage:booker>
+            <cottage:people></cottage:people>
+            <cottage:room></cottage:room>
+           
+            
+            <sswap:mapsTo>
+              <sswap:Object rdf:nodeID="ub40bL24C18">
+                <cottage:hasName></cottage:hasName>
+                <cottage:hasAddress></cottage:hasAddress>
+                <cottage:distanceToLake></cottage:distanceToLake>
+                <rdf:type rdf:resource="http://localhost:8080/sswapService/res/cottage/Booking"/>
+                <cottage:booker></cottage:booker>
+                <cottage:bookingNumber> </cottage:bookingNumber>
+                <cottage:allowPeople></cottage:allowPeople>
+                <cottage:distanceToCity></cottage:distanceToCity>
+                <cottage:cityNearBy></cottage:cityNearBy>
+                <cottage:hasRoom></cottage:hasRoom>
+                <cottage:endDate></cottage:endDate>
+                <cottage:startDate></cottage:startDate>
+                <cottage:image></cottage:image>
+              </sswap:Object>
+            </sswap:mapsTo>
+            <cottage:distanceToLake></cottage:distanceToLake>
+            <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Subject"/>
+            <cottage:distanceToCity></cottage:distanceToCity>
+            <cottage:cityNearBy></cottage:cityNearBy>
+            <cottage:startDate></cottage:startDate>
+            <cottage:daysForStay></cottage:daysForStay>
+            <cottage:maxShift></cottage:maxShift>
+          </cottage:Request>
+        </sswap:hasMapping>
+      </sswap:Graph>
+    </sswap:operatesOn>
+    <sswap:oneLineDescription>A service for cottage searching and booking</sswap:oneLineDescription>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Resource"/>
+    <sswap:providedBy rdf:resource="http://localhost:8080/sswapService/res/cottageRDG/resourceProvider"/>
+    <sswap:name>Cottage booking service</sswap:name>
+  </cottage:cottageInformationService>
+</rdf:RDF>

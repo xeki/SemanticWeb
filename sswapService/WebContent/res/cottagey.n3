@@ -1,0 +1,104 @@
+@prefix cottage: <http://localhost:8080/booking/cottagey.rdf#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+cottage:alebuaCottage a cottage:Cottage ;
+  cottage:allowPeople "10"^^xsd:int ;
+  cottage:cityNearBy "Jyvaskyla"^^xsd:string ;
+  cottage:distanceToLake "3"^^xsd:int ;
+  cottage:distanceToCity "4"^^xsd:int ;
+  cottage:hasAddress "Kirkkotie, Jyvaskyla"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/z3mc9p6k9/Cottage1.jpg"^^xsd:string ;
+  cottage:hasName "ableCottage"^^xsd:string ;
+  cottage:hasRoom "2"^^xsd:int ;
+cottage:hasPeriod cottage:period4, cottage:period8.
+
+cottage:lebuaCottage a cottage:Cottage ;
+  cottage:allowPeople "12"^^xsd:int ;
+  cottage:cityNearBy "Jyvaskyla"^^xsd:string ;
+  cottage:distanceToLake "2"^^xsd:int ;
+  cottage:distanceToCity "4"^^xsd:int ;
+  cottage:hasAddress "Ronimaki,Jyvaskyla"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/sr76zv3i1/Cottage2.jpg"^^xsd:string ;
+  cottage:hasName "lebuaCottage"^^xsd:string ;
+  cottage:hasRoom "3"^^xsd:int ;
+  cottage:hasPeriod cottage:period4, cottage:period8.
+  
+  cottage:VaaaCottage a cottage:Cottage ;
+  cottage:allowPeople "12"^^xsd:int ;
+  cottage:cityNearBy "Jyvaskyla"^^xsd:string ;
+  cottage:distanceToLake "2"^^xsd:int ;
+  cottage:distanceToCity "9"^^xsd:int ;
+  cottage:hasAddress "centrel part,Jyvaskyla"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/vm7f49189/cottage6.jpg"^^xsd:string ;
+  cottage:hasName "lebuaCottage"^^xsd:string ;
+  cottage:hasRoom "3"^^xsd:int ;
+ cottage:hasPeriod cottage:period3,cottage:period4 .
+
+cottage:springCottage a cottage:Cottage ;
+  cottage:allowPeople "7"^^xsd:int ;
+  cottage:cityNearBy "Kuopio"^^xsd:string ;
+  cottage:distanceToLake "4"^^xsd:int ;
+  cottage:distanceToCity "2"^^xsd:int ;
+  cottage:hasAddress "Jantotie,Kuopio"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/x7uykssc9/Cottage3.jpg"^^xsd:string ;
+  cottage:hasName "springCottage"^^xsd:string ;
+  cottage:hasRoom "2"^^xsd:int ;
+ cottage:hasPeriod cottage:period2.
+
+cottage:sunnyCottage a cottage:Cottage ;
+  cottage:allowPeople "6"^^xsd:int ;
+  cottage:cityNearBy "Kuopio"^^xsd:string ;
+  cottage:distanceToLake "4"^^xsd:int ;
+  cottage:distanceToCity "1"^^xsd:int ;
+  cottage:hasAddress "Pahkakuja,Kuopio"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/8fvcdkb5l/Cottage4.jpg"^^xsd:string ;
+  cottage:hasName "sunnyCottage"^^xsd:string ;
+  cottage:hasPeriod "3"^^xsd:int ;
+  cottage:hasRoom "2"^^xsd:int ;
+  cottage:hasPeriod cottage:period1.
+
+cottage:yangCottage a cottage:Cottage ;
+  cottage:allowPeople "15"^^xsd:int ;
+  cottage:cityNearBy "Helsinki"^^xsd:string ;
+  cottage:distanceToLake "4"^^xsd:int ;
+  cottage:distanceToCity "5"^^xsd:int ;
+  cottage:hasAddress "Castrninkatu 2, Helsinki"^^xsd:string ;
+  cottage:hasImage "http://s20.postimg.org/5n24tjat5/Cottage5.jpg"^^xsd:string ;
+  cottage:hasName "yangCottage"^^xsd:string ;
+  cottage:hasRoom "4"^^xsd:int ;
+  cottage:hasPeriod cottage:period4, cottage:period6 .
+  
+  cottage:period1
+  cottage:endDate "2016-03-21"^^xsd:date ;
+  cottage:startDate "2016-03-18"^^xsd:date .
+
+cottage:period2
+  cottage:endDate "2016-03-24"^^xsd:date ;
+  cottage:startDate "2016-03-21"^^xsd:date .
+
+cottage:period3
+  cottage:endDate "2016-03-20"^^xsd:date ;
+  cottage:startDate "2016-03-17"^^xsd:date .
+
+cottage:period4
+  cottage:endDate "2016-03-24"^^xsd:date ;
+  cottage:startDate "2016-03-20"^^xsd:date .
+
+cottage:period5
+  cottage:endDate "2016-03-25"^^xsd:date ;
+  cottage:startDate "2016-03-22"^^xsd:date .
+
+cottage:period6
+  cottage:endDate "2016-03-29"^^xsd:date ;
+  cottage:startDate "2016-03-26"^^xsd:date .
+
+cottage:period7
+  cottage:endDate "2016-04-19"^^xsd:date ;
+  cottage:startDate "2016-04-18"^^xsd:date .
+
+cottage:period8
+  cottage:endDate "2016-04-23"^^xsd:date ;
+  cottage:startDate "2016-04-20"^^xsd:date .

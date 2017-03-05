@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:travel="http://localhost:8080/travel-ontology#"
+  xmlns:sswap="http://sswapmeet.sswap.info/sswap/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <travel:travelService rdf:about="http://localhost:8080/travel/resource/travelService">
+    <sswap:oneLineDescription>A service that provides a search for holiday travel packages</sswap:oneLineDescription>
+    <sswap:name>holiday travel package</sswap:name>
+    <sswap:operatesOn>
+      <sswap:Graph rdf:nodeID="ub87bL11C22">
+        <sswap:hasMapping>
+          <sswap:Subject rdf:nodeID="ub87bL12C30">
+            <travel:outboundDate></travel:outboundDate>
+            <travel:tfd></travel:tfd>
+            <travel:originPlace></travel:originPlace>
+            <travel:tft></travel:tft>
+            <travel:attractions></travel:attractions>
+            <travel:tfp></travel:tfp>
+            <travel:destinationPlace></travel:destinationPlace>
+            <travel:inboundDate></travel:inboundDate>
+            <travel:thr></travel:thr>
+            <travel:thp></travel:thp>
+            <rdf:type rdf:resource="http://localhost:8080/travel-ontology#travelRequest"/>
+            <sswap:mapsTo>
+              <travel:travelResponse rdf:nodeID="ub87bL24C34">
+                <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Object"/>
+                <travel:package>
+                  <travel:Package rdf:nodeID="ub87bL26C24">
+                    <travel:vaccination>
+                      <travel:Vaccination rdf:nodeID="ub87bL36C28">
+                        <travel:description></travel:description>
+                        <travel:category></travel:category>
+                      </travel:Vaccination>
+                    </travel:vaccination>
+                    <travel:hotel>
+                      <travel:Hotel rdf:nodeID="ub87bL41C22">
+                        <travel:id></travel:id>
+                        <travel:longitude></travel:longitude>
+                        <travel:ranking></travel:ranking>
+                        <travel:low_rate></travel:low_rate>
+                        <travel:latitude></travel:latitude>
+                        <travel:room_price></travel:room_price>
+                        <travel:name></travel:name>
+                      </travel:Hotel>
+                    </travel:hotel>
+                    <travel:attraction>
+                      <travel:Attraction rdf:nodeID="ub87bL28C28">
+                        <travel:rating></travel:rating>
+                        <travel:types></travel:types>
+                        <travel:name></travel:name>
+                        <travel:index></travel:index>
+                        <travel:formatted_address></travel:formatted_address>
+                      </travel:Attraction>
+                    </travel:attraction>
+                    <travel:flight>
+                      <travel:Flight rdf:nodeID="ub87bL51C23">
+                        <travel:outbound>
+                          <travel:Outbound rdf:nodeID="ub87bL53C27">
+                            <travel:departure_time></travel:departure_time>
+                            <travel:origin></travel:origin>
+                            <travel:destination></travel:destination>
+                            <travel:arrival_time></travel:arrival_time>
+                          </travel:Outbound>
+                        </travel:outbound>
+                        <travel:inbound>
+                          <travel:Inbound rdf:nodeID="ub87bL60C26">
+                            <travel:arrival_time></travel:arrival_time>
+                            <travel:destination></travel:destination>
+                            <travel:departure_time></travel:departure_time>
+                            <travel:origin></travel:origin>
+                          </travel:Inbound>
+                        </travel:inbound>
+                      </travel:Flight>
+                    </travel:flight>
+                  </travel:Package>
+                </travel:package>
+              </travel:travelResponse>
+            </sswap:mapsTo>
+          </sswap:Subject>
+        </sswap:hasMapping>
+      </sswap:Graph>
+    </sswap:operatesOn>
+    <rdf:type rdf:resource="http://sswapmeet.sswap.info/sswap/Resource"/>
+    <sswap:providedBy rdf:resource="http://localhost:8080/travel/resource/resourceProvider"/>
+  </travel:travelService>
+</rdf:RDF>
+
